@@ -28,7 +28,6 @@
                 check=false;
             }
         }
-
         return check;
     });
 
@@ -66,3 +65,16 @@
     
 
 })(jQuery);
+// Below function Executes on click of login button.
+function match(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if ( username == "max" && password == "maxi"){
+        // alert ("Login successfully");
+        window.location = "dashboard.php"; // Redirecting to other page.
+        return false;
+    }
+    else{
+        alert("Incorrect UserName or Password!");
+    }
+}
