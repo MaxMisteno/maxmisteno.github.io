@@ -14,8 +14,6 @@
 		}
 		echo $username, $password;
 	}
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
