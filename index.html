@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link data-react-helmet="true" rel="icon" type="image/png" href="media/tag-circle.png">
+    <link rel="stylesheet" href="main.css">
+    <title>MAX MISTENO</title>
+</head>
+
+<body onload="loadfun()">
+    <!-- loader -->
+
+    <div class="loader-wrapper" id="loading">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var load = document.getElementById("loading");
+        //         var load = document.getElementById("intro");
+
+        function loadfun() {
+
+            load.style.display = 'none';
+        }
+    </script>
+
+    <!-- main body -->
+    <section class="main-frame">
+        <!-- nav bar -->
+        <nav class="navbar">
+            <div class='brand-title'>MAX MISTENO</div>
+            <a href='#' class='toggle-btn' id='toggle-btn'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </a>
+            <div class='navbar-links' id='navbar-links'>
+                <ul>
+                    <li><a href="index.html" id='links'>WORK</a></li>
+                    <li><a href="about.html" id='links'>ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of nav -->
+        
+        <div class="main-body">
+            <section class="vid-frame">
+                
+            <!--       N&M       -->
+                <div data-aos="zoom-in" class="videos"> 
+                    <a href="nm.html">
+                        <img src="media/nmCover.jpg">
+                    </a>
+                    <div class="des">
+                        <p style="color: #ffffff;">NEO AND MARN</p>
+                    </div>
+                </div>
+                
+            <!--   NO.1   -->
+                <div data-aos="zoom-in" class="videos"> 
+                    <a href="mist.html">
+                        <img src="media/magicofm.jpg">
+                    </a>
+                    <div class="des">
+                        <p style="color: #ffffff;">MAGIC OF MIST</p>
+                    </div>
+                </div>
+            
+             <!--   NO.2   -->
+                <div data-aos="zoom-in" class="videos">
+                    <a href="awokendream.html">
+                        <img src="media/awkendrm.jpg">
+                    </a>
+                    <div class="des">
+                        <p style="color: #ffffff;">AWOKEN DREAM</p>
+                    </div>
+                </div>
+            
+            <!--   NO.3   -->
+                <div data-aos="zoom-in" class="videos">
+                    <a href="ontheroadtomdy.html">
+                        <img src="media/OTRTMDY.jpg">
+                    </a>
+                    <div class="des">
+                        <p style="color: #ffffff;">ON THE ROAD TO MANDALAY</p>
+                    </div>
+                </div>
+            
+            <!--   NO.4   -->
+                <div data-aos="zoom-in" class="videos">
+                    <a href="scenic.html">
+                        <img src="media/scenisTN.jpg">
+                    </a>
+                    <div class="des">
+                        <p style="color: #ffffff;">SCENIC</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </section>
+
+    <!-- socail links -->
+    <div class="socail">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/naisay.ya.9" target="blank">FACEBOOK</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/max_misteno/" target="blank">INSTAGRAM</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC5DlRFRU7ld4zPOPddkJtgw" target="blank">YOUTUBE</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+        const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+        const links = document.getElementById('links');
+
+        toggleBtn.addEventListener('click', () => {
+            navbarlinks.classList.toggle('active');
+        })
+    </script>
+</body>
+<!-- footer -->
+
+<footer style="text-align: center; font-family:'Courier New', Courier, monospace">
+    <p style="color: #fff;">&copy;CopyRight 2022 Developed by <a style="text-decoration: none; color: white; " href="https://nayhtetkyaw.tk" target="blank">nayhtetkyaw.dev</a></p>
+</footer>
+
+</html>

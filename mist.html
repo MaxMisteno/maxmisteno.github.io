@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Description</title>
+    <link rel="stylesheet" href="des.css">
+    <link data-react-helmet="true" rel="icon" type="image/png" href="media/tag-circle.png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body onload="loadfun()">
+    <!-- loader -->
+
+    <div class="loader-wrapper" id="loading">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var load = document.getElementById("loading");
+        //         var load = document.getElementById("intro");
+
+        function loadfun() {
+
+            load.style.display = 'none';
+        }
+    </script>
+    <div class="main-frame">
+
+        <!-- nav bar -->
+        <nav class="navbar">
+            <div class='brand-title'>MAX MISTENO</div>
+            <a href='#' class='toggle-btn' id='toggle-btn'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </a>
+            <div class='navbar-links' id='navbar-links'>
+                <ul>
+                    <li><a href="index.html" id='links'>WORK</a></li>
+                    <li><a href="about.html" id='links'>ABOUT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of nav -->
+
+        <div class="vid-frame">
+
+            <iframe src="https://www.youtube.com/embed/Fv62rtEFekM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <!-- DES -->
+        <p>
+            Like many people for the last 10 months I've been completely separated from most of my close friends. I've felt my creative energy diminishing over time and I'm exploring ways to bring it back. This film is just a short and random clips from my recent
+            trip to upper part of Myanmar with my new friends. It's been a rough year as i look back I'm so thankful for all the friends and family who kept me moving forward and got support from them that meant I was able to navigate my way through.
+        </p>
+
+        <div class="img-col-frame">
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="img-col">
+                <img src="media/m1.jpg" />
+            </div>
+
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="img-col">
+                <img src="media/m2.jpg" />
+            </div>
+
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="img-col">
+                <img src="media/m3.jpg" />
+            </div>
+
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="img-col">
+                <img src="media/m4.jpg" />
+            </div>
+
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="img-col">
+                <img src="media/m5.jpg" />
+            </div>
+
+            <div data-aos="zoom-in-up" data-aos-duration="1000" class="img-col">
+                <img src="media/m6.jpg" />
+            </div>
+
+
+        </div>
+    </div>
+    <!-- socail links -->
+    <div class="socail">
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/naisay.ya.9" target="blank">FACEBOOK</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/max_misteno/" target="blank">INSTAGRAM</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC5DlRFRU7ld4zPOPddkJtgw" target="blank">YOUTUBE</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+        const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+        const links = document.getElementById('links');
+
+        toggleBtn.addEventListener('click', () => {
+            navbarlinks.classList.toggle('active');
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+<!-- footer -->
+
+<footer style="text-align: center; margin-left: 15%; font-family:'Courier New', Courier, monospace">
+    <p style="color: #fff;">&copy;CopyRight 2022 Developed by <a style="text-decoration: none; color: white; " href="https://nayhtetkyaw.tk" target="blank">nayhtetkyaw.dev</a></p>
+</footer>
+
+</html>

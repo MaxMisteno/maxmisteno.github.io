@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>ABOUT - MAX MISTENO</title>
+    <link data-react-helmet="true" rel="icon" type="image/png" href="media/tag-circle.png">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body onload="loadfun()">
+    <!-- loader -->
+
+    <div class="loader-wrapper" id="loading">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var load = document.getElementById("loading");
+        //         var load = document.getElementById("intro");
+
+        function loadfun() {
+
+            load.style.display = 'none';
+        }
+    </script>
+
+    <div class="main-body">
+
+        <!-- main body -->
+        <section class="main-frame">
+            <!-- nav bar -->
+            <nav class="navbar">
+                <div class='brand-title'>MAX MISTENO</div>
+                <a href='#' class='toggle-btn' id='toggle-btn'>
+                    <span class='bar'></span>
+                    <span class='bar'></span>
+                    <span class='bar'></span>
+                </a>
+                <div class='navbar-links' id='navbar-links'>
+                    <ul>
+                        <li><a href="index.html" id='links'>WORK</a></li>
+                        <li><a href="about.html" id='links'>ABOUT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- end of nav -->
+
+            <section class="para">
+                <div data-aos="fade-up" data-aos-duration="2000" class="img">
+                    <img src="media/profile2.jpg">
+                </div>
+
+                <div class="text">
+                    <p>Max Misteno is a Director, Cinematographer, Photographer and filmmaker. He creates personal pieces of work and he make work for all sorts of commercial clients. A lot of his works are travel-related. His combination of skills allow
+                        him to create full photo/video projects by himself.</p>
+
+                    <p>CONTACT ME</p>
+                    <p style="text-transform: none;">EMAIL : maxmisteno@gmail.com</p>
+                </div>
+            </section>
+
+            <!-- socail links -->
+            <div class="socail">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/naisay.ya.9" target="blank">FACEBOOK</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/max_misteno/" target="blank">INSTAGRAM</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC5DlRFRU7ld4zPOPddkJtgw" target="blank">YOUTUBE</a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                const toggleBtn = document.getElementsByClassName("toggle-btn")[0];
+                const navbarlinks = document.getElementsByClassName('navbar-links')[0]
+                const links = document.getElementById('links');
+
+                toggleBtn.addEventListener('click', () => {
+                    navbarlinks.classList.toggle('active');
+                })
+            </script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+            </script>
+    </div>
+</body>
+
+<footer style="text-align: center; font-family:'Courier New', Courier, monospace">
+    <p style="color: #fff;">&copy;CopyRight 2022 Developed by <a style="text-decoration: none; color: white; " href="https://nayhtetkyaw.tk" target="blank">nayhtetkyaw.dev</a></p>
+</footer>
+
+</html>
