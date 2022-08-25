@@ -116,8 +116,20 @@ body {
     height: 600px;
 }
 
+.vid-frame video{
+    width: 1080px;
+    height: 600px;
+}
+
 @media(max-width: 1000px) {
     .vid-frame iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .vid-frame video {
         width: 400px;
         height: 200px;
     }
